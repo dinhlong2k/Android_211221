@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="210dp"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="15dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="82dp"
+        android:background="@drawable/ractangle_radius">
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Samsung Watch"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textStyle="bold"
+            android:layout_marginTop="120dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/item_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Active . Green"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_name"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#9A9A9D"
+            android:textSize="15sp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_version"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:id="@+id/item_currency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VND "
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="#5956E9"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 359"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="#5956E9"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:id="@+id/circleBackround"
+        android:layout_width="164dp"
+        android:layout_height="164dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/circle"
+        />
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:layout_constraintLeft_toLeftOf="@id/circleBackround"
+        app:layout_constraintRight_toRightOf="@id/circleBackround"
+        app:layout_constraintTop_toTopOf="@id/circleBackround"
+        app:layout_constraintBottom_toBottomOf="@id/circleBackround"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

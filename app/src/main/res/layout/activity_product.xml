@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    tools:context=".Controller.ProductActivity">
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/backButton_product"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_left"
+        />
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/heart_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/backgroundcolor"
+        android:src="@drawable/ic_heart"
+        />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerImageSlider"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="12dp"
+        android:paddingStart="80dp"
+        android:paddingEnd="80dp"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backButton_product"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/viewPagerImageSlider"
+        android:background="@drawable/top_left_right_radius"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/productLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black"
+            android:text="2020 Apple iPad Air 10.9"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="36dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/descripBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By Ecommerce"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/productLabel"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/descripReg"
+            android:layout_height="wrap_content"
+            android:layout_width="330dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="12dp"
+            android:text="Available when you purchase any new iPhone, iPad, iPod Touch, Mac or Apple TV, £4.99/month after free trial."
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descripBold" />
+
+        <TextView
+            android:id="@+id/fulldescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descripReg"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="12dp"
+            android:text="Giá Luôn Tốt Nhất!!!"
+            android:textColor="@color/purple"
+            android:fontFamily="sans-serif-black"
+            android:textSize="16sp"
+            />
+
+
+        <TextView
+            android:id="@+id/totallabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/addBasketBtn"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="36dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="Total"
+            />
+
+        <TextView
+            android:id="@+id/product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/addBasketBtn"
+            android:layout_marginRight="36dp"
+            android:textColor="@color/purple"
+            android:fontFamily="sans-serif-black"
+            android:textSize="20sp"
+            android:layout_marginBottom="24dp"
+            android:text="$ 579"
+            />
+
+        <Button
+            android:id="@+id/addBasketBtn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Thêm Vào Giỏ Hàng"
+            app:backgroundTint="@null"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/buttonradius"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

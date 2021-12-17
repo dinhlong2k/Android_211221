@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/admin_available_product_view"
+    android:paddingBottom="10dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/infor_bill"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/admin_pending_radius_top"
+
+        >
+        <TextView
+            android:id="@+id/idBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#A1234"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#DCDADA"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="12dp"/>
+
+        <TextView
+            android:id="@+id/customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Le Viet Anh"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/idBill"
+            android:layout_marginLeft="12dp"/>
+
+
+        <TextView
+            android:id="@+id/date_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12/12/21"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="24dp"/>
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            app:layout_constraintRight_toLeftOf="@id/date_bill"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/ic_calendar"
+            app:tint="@color/white"
+            android:layout_marginRight="6dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/price_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/infor_bill">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng cộng"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#605F5F"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="12dp"/>
+
+        <TextView
+            android:id="@+id/total_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 500"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="24dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/grayView_pending"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/price_container"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="#A3A3A3"/>
+
+    <ListView
+        android:id="@+id/listView_pending_qtt"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="2.0sp"
+        app:layout_constraintTop_toBottomOf="@id/grayView_pending"
+        app:layout_constraintLeft_toLeftOf="parent">
+    </ListView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

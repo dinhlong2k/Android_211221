@@ -1,0 +1,27 @@
+<resources>
+    <!--    navigation drawer-->
+    <string name="app_name">Android_71221</string>
+    <string name="nav_profile">Hồ Sơ</string>
+    <string name="nav_order">Đơn Hàng</string>
+    <string name="nav_fav">Yêu Thích</string>
+    <string name="nav_deli">Delivery</string>
+    <string name="nav_setting">Settings</string>
+    <string name="nav_logout">Đăng Xuất</string>
+
+    <string name="nav_drawer_open">Open navigationDrawer</string>
+    <string name="nav_drawer_close">Close navigationDrawer</string>
+
+    <!--    navigation drawer-->
+
+    <!--    navigation bottom-->
+    <string name="nav_home">Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--    navigation bottom-->
+
+    <!--   admin navigation drawer-->
+    <string name="admin_nav_home">Thống Kê</string>
+    <string name="admin_nav_pendingList">Danh Sách Đơn Hàng</string>
+    <string name="admin_nav_userSettings">Cài Đặt Người Dùng</string>
+    <!--   admin navigation drawer-->
+</resources>

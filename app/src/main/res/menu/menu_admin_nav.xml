@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_admin_home"
+            android:title="@string/admin_nav_home"
+            android:icon="@drawable/ic_admin_home"/>
+        <item
+            android:id="@+id/nav_admin_pending"
+            android:title="@string/admin_nav_pendingList"
+            android:icon="@drawable/ic_admin_pending"/>
+
+        <item
+            android:id="@+id/nav_admin_userSettings"
+            android:title="@string/admin_nav_userSettings"
+            android:icon="@drawable/ic_user_settings"/>
+
+
+    </group>
+    <item android:title=""></item>
+    <item android:title=""></item>
+    <item android:title=""></item>
+    <item android:title=""></item>
+    <item android:title=""></item>
+    <item android:title=""></item>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_admin_logout"
+            android:title="@string/nav_logout"
+            android:icon="@drawable/ic_logout"/>
+    </group>
+
+</menu>

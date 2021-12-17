@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_admin_home"
+        android:title=""
+        android:icon="@drawable/ic_admin_home"/>
+
+    <item android:id="@+id/action_admin_pending"
+        android:title=""
+        android:icon="@drawable/ic_admin_pending"/>
+
+    <item android:id="@+id/action_admin_userSettings"
+        android:title=""
+        android:icon="@drawable/ic_user_settings"/>
+
+</menu>

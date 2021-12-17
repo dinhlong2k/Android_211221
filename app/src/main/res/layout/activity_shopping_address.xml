@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Controller.UpdateProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/backButton_product"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="36dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_left"
+            />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thông Tin Thẻ"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="36dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="24dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Địa chỉ"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                >
+            </TextView>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/update_address"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="150dp">
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tỉnh/ Thành Phố"
+            android:textSize="16dp"
+
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/update_province"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="150dp">
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quận/ Huyện"
+            android:textSize="16dp"
+
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/update_district"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="150dp">
+        </EditText>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_update_address"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Cập Nhật"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/buttonradius"
+        app:backgroundTint="@null"
+        android:textSize="20dp">
+
+    </Button>
+
+</LinearLayout>

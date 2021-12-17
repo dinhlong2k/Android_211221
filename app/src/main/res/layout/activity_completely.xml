@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.CompletelyActivity">
+
+    <TextView
+        android:id="@+id/successLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Thanh Toán Thành Công"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#A0DD85"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:layout_width="174dp"
+        android:layout_height="184dp"
+        android:src="@drawable/check"
+        app:layout_constraintBottom_toTopOf="@id/successLabel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+         />
+
+    <Button
+        android:id="@+id/continueShopping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        app:layout_constraintTop_toBottomOf="@id/successLabel"
+        android:layout_marginTop="30dp"
+        android:height="70dp"
+        app:backgroundTint="@null"
+        android:background="#A0DD85"
+        android:text="Tiếp Tục Mua Sắm"
+        android:textSize="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
